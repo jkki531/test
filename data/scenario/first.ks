@@ -136,86 +136,8 @@
   @layopt layer="message1" visible=false
 [endmacro]
 
-
 ;===========================
 
-;=======채팅레이어이름 네임드,모브
-/*
-
-[macro name="fs"]
-  [font bold="true" color="0x088A68" size=20]선인좋아: [font bold="false" color="black"]
-[endmacro]
-
-[macro name="kgs"]
-  [font bold="true" color="0xFF1493" size=20]wildrose: [font bold="false" color="black"]
-[endmacro]
-
-[macro name="sk"]
-  [font bold="true" color="red" size=20]저주의왕: [font bold="false" color="black"]
-[endmacro]
-
-
-
-[macro name="mob"]
-[font bold="true" color="black" size=20]
-[getrand var="f.a" min="0" max="4"]
-[if exp="f.a == 0"]
-  후돼와지: [font bold="false" color="gray"]
-[elsif exp="f.a == 1"]
-  밧치코이!!: [font bold="false" color="gray"]
-[elsif exp="f.a == 2"]
-  완자나베: [font bold="false" color="gray"]
-[elsif exp="f.a == 3"]
-  특급주령: [font bold="false" color="gray"]
-[else]
-  백절불요: [font bold="false" color="gray"]
-[endif]
-[endmacro]
-
-
-;=======채팅매크로
-
-[macro name="czg"]
-[font size=20 bold="true"]
-[getrand var="f.ccu" min="0" max="5"]
-[if exp="f.ccu == 0"]
-  [font color="0x8A2BE2"]구상도형제[font shadow="red"]파이어: [font bold="false" color="black" shadow="none" ]유ーーーーー지ーーーーーーーーー!!!!!!
-[elsif exp="f.ccu == 1"]
- [font color="0x4B0082"]  베스트프렌드: [font bold="false" color="black"]브라더ーーーーーーーーーー!!!!!
-[elsif exp="f.ccu == 2"]
-  [font bold="false" color="orange" size=15]====몹저씨님이 입장하셨습니다.====[font size=20][r]
-  [font bold="true" color="black"]몹저씨: [font bold="false" color="gray"]팬티보여주세요[r]
-  [font color="orange" size=15]====몹저씨님이 추방되셨습니다.====
-[elsif exp="f.ccu == 3"]
- [font bold="false" size=15 color="orange"]====원숭이님이 입장하셨습니다.====[font size=20][r]
-  [font bold="true" color="black"]원숭이: [font bold="false" color="gray"]좋은 말씀 전하러 왔습니다^^ 반성교 믿고 천당가세요[r]
-  [font size=15 color="orange"]====원숭이님이 추방되셨습니다.====
-[elsif exp="f.ccu == 4"]
-  [font color="0xFF7F50"]이타도리사랑해: 유지사랑해
-[else]
-[font color="pink"]귀여워: 이타도리 귀여워 유지
-[endif]
-[r]
-[endmacro]
-
-[macro name="sukkun"]
-[getrand var="f.b" min="0" max="5"]
-[if exp="f.b == 0"]
-  [sk] [font bold="false" color="black" size=20]노잼
-[elsif exp="f.b == 1"]
-   [sk] [font bold="false" color="black" size=20]흥미가 솟지 않는단 말이다
-[elsif exp="f.b == 2"]
-   [sk] [font bold="false" color="black" size=20]넌 재미없어
-[elsif exp="f.b == 3"]
-   [sk] [font bold="false" color="black" size=20]불쾌하다
-[else]
-  [sk] [font bold="false" color="black" size=20]네 주제를 알아라 멍청한놈
-[endif]
-[r]
-[endmacro]
-
-
-*/
 [macro name="wpp"]
 [wait_plus time="700" time2="10" click=true]
 [endmacro]
@@ -251,13 +173,6 @@
 [free name="chat" layer=0]
 [endmacro]
 
-;===========================================================================================
-;로그인화면
-; [ignore exp="sf.login == 1"]
-; ;여기에 입력
-; [endignore][eval exp="sf.login = 1"]
-;===========================================================================================
-
 [bg storage=room2.png time=0]
 
 [call storage=scene1.ks target="youtube"]
@@ -265,8 +180,8 @@
 [image layer="1" storage="chat/frame.png"]
 [image layer="1" name="prof" storage="chat/prof.png" x=40 y=605 ]
 [image layer="1" name="live" storage="chat/prof_live.png" x=40 y=605 ]
-[ptext layer="1" name="yutitle" text="【1일차】마을 축제 탐방🍡" size=40 x=20 y=540 color=black]
-[ptext layer="1" name="yuname" text="tora" size=40 x=130 y=605 color=black bold=true]
+[ptext layer="1" name="yutitle" text="【1일차】마을 축제 탐방🍡" size=40 x=20 y=540 color=white]
+[ptext layer="1" name="yuname" text="유지튜브" size=40 x=130 y=605 color=white bold=true]
 [chara_show name="yuji" left="270" top=100 time=10]
 
 
